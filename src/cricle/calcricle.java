@@ -9,7 +9,7 @@ package cricle;
  * @author 344_10
  */
 public class calcricle {
-     private double radius;
+     protected double radius;
      final double pi = 3.1415926535897932384626433832795;
      
     public calcricle(double radius) {
@@ -22,7 +22,7 @@ public class calcricle {
     }
 
     public double calculateArea() {
-        return Math.PI * this.radius * this.radius;
+        return pi * this.radius * this.radius;
     }
     
     

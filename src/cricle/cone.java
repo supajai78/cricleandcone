@@ -8,19 +8,20 @@ package cricle;
  *
  * @author 344_10
  */
-public class cone {
-    private double r;
+public class cone extends calcricle{
+    
     private double h;
-    final double pi = 3.1415926535897932384626433832795;
+    
     
     public cone(double radius, double height) {
-        this.r = radius;
+        super(radius);
+        this.radius = radius;
         this.h = height;
     }
 
     // Getter
     public double getRadius() {
-        return r;
+        return radius;
     }
 
     public double getHeight() {
@@ -29,7 +30,7 @@ public class cone {
     
    
     public double calculateSurfaceArea() {
-        double area = 0.33333333333*pi*(Math.pow(r,2)*h);
+        double area = 0.33333333333*pi*(Math.pow(radius,2)*h);
         return area;
     }
 }
