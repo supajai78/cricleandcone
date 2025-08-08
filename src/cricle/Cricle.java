@@ -15,7 +15,7 @@ public class Cricle {
      */
     public static void main(String[] args) {
         calcricle circle = new calcricle(50);
-        cone co = new cone(50 , 40);
+        cone co = new cone(400, 50);
         
         System.out.println("Circle Area = " + circle.calculateArea());
         System.out.println("cone Area = " + co.calculateSurfaceArea());

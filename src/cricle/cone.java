@@ -26,12 +26,10 @@ public class cone {
     public double getHeight() {
         return h;
     }
-    public double getSlantHeight() {
-        return Math.sqrt(r * r + h * h);
-    }
+    
    
     public double calculateSurfaceArea() {
-        double l = getSlantHeight();
-        return Math.PI * r * (r + l);
+        double area = 0.33333333333*pi*(Math.pow(r,2)*h);
+        return area;
     }
 }
